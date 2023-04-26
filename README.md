@@ -1,5 +1,5 @@
-# {{ Course Name }}
-## Full Stack Course - {{ Start Date }}
+# Node.js
+## Full Stack Course - 2023-1
 
 ### ✏️ Homework
 
