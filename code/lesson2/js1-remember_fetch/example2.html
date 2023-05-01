@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        // WE WILL CHAIN THE PROMISES INSTEAD
+
+        // const url = "https://pokeapi.co/api/v2/pokemon";
+
+        // const promiseVar = fetch(url);
+        // promiseVar
+        //     .then(function(response) {
+        //         return response.json();                   
+        //     })
+        //     .then(function(result) {
+        //         console.log(result);
+        //     })
+        //     .catch(function(error) {
+        //         console.log("THERE WAS AN ERROR")
+        //     });  
+        
+        // console.log("I AM FASTER...");
+
+        // NOW WITH AWESOME ARROW FUNCTIONS
+
+
+        const url = "https://pokeapi.co/api/v2/pokemon";
+
+        const promiseVar = fetch(url);
+        promiseVar
+            .then(response => response.json())
+            .then(result => {
+                console.log(result);
+                // I would put it in LIs here...
+            })
+            .catch(error => {
+                console.log("THERE WAS AN ERROR")
+            });  
+        
+        console.log("I AM FASTER...");
+        
+
+
+
+       
+
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+       
+
+        const url = "https://pokeapi.co/api/v2/pokemon";
+        
+        // ASYNC CALL
+        // asynchronous
+
+        // Promises are just a standardized way of dealing with async functionality
+        const promiseVar = fetch(url);
+        promiseVar.then(function(response) {
+            console.log("I WILL RUN WHEN THE GETCH IS DONE GOING TO AND BACK FROM THE SERVER");
+            console.log(response);
+            
+            const textPromise = response.json();
+            
+            textPromise.then(function(result) {
+
+                console.log(result);
+                
+            });
+        });
+        console.log("I AM FASTER...");
+
+
+
+    </script>
+
+
+</body>
+</html>

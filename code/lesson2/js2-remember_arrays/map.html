@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+
+<body>
+
+    <ol id="peopleNames"></ol>
+
+    <script>
+        const numbers = [23, 23, 2, 5, 3, 12, 80, 2, 5, -12, 23, -90, 30];
+        // const tripledNumbers = [];
+        // for (let i = 0; i < numbers.length; i++) {
+        //     const newNumber = numbers[i] * 3;
+        //     tripledNumbers.push(newNumber);
+        // }
+        // console.log(tripledNumbers);
+
+        // const tripledNumbers = numbers.map(function(value) {
+        //     return value * 3;
+        // });
+        // console.log(tripledNumbers);
+
+        const tripledNumbers = numbers.map(value => value * 3);
+        console.log(tripledNumbers);
+
+
+
+        const coolPeople = [
+            {
+                name: "Helder",
+                age: 42
+            },
+            {
+                name: "Hugo",
+                age: 52
+            },
+            {
+                name: "Sandra",
+                age: 44
+            },
+            {
+                name: "Bruno",
+                age: 41
+            }
+        ];
+
+
+        const peopleNames = document.querySelector("#peopleNames");
+
+        // coolPeople.forEach(function(value) {
+        //     const li = document.createElement("li");
+        //     li.textContent = value.name;
+        //     peopleNames.appendChild(li);
+        // });
+
+        // coolPeople.forEach(function(value) {
+        //     peopleNames.innerHTML += `<li>${value.name}</li>`
+        // });
+
+        // const liPeople = coolPeople.map(function (value) {
+        //     return `<li>${value.name}</li>`;
+        // });
+        // const stringLiPeople = liPeople.join("");
+        // console.log(stringLiPeople);
+        // peopleNames.innerHTML = stringLiPeople;
+
+        peopleNames.innerHTML = coolPeople.map(value => `<li>${value.name}</li>`).join("");
+
+
+    </script>
+</body>
+</html>
