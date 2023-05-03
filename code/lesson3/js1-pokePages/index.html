@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="infoBox">
+
+    </div>
+    <!-- <button id="buttonStart">START BUTTON</button> -->
+    <ul id="listPokemon">
+        <li>Pokemon will go here...</li>
+    </ul>
+    <button disabled id="buttonPrevious">Previous</button>
+    <button disabled id="buttonNext">Next</button>
+
+    <script>
+        const infoBox = document.querySelector("#infoBox");
+        const listPokemon = document.querySelector("#listPokemon");
+        // const buttonStart = document.querySelector("#buttonStart");
+        const buttonPrevious = document.querySelector("#buttonPrevious");
+        const buttonNext = document.querySelector("#buttonNext");
+
+        let nextURL;
+        let prevURL;
+
+        // buttonStart.addEventListener("click", function() {
+        //     getPokemon("https://pokeapi.co/api/v2/pokemon");
+        // });
+
+        getPokemon("https://pokeapi.co/api/v2/pokemon");
+
+        buttonPrevious.addEventListener("click", function() {
+            getPokemon(prevURL);
+        });
+
+        buttonNext.addEventListener("click", function() {
+            getPokemon(nextURL);
+        });
+
+        function getPokemon(url) {
+            fetch(url)
+                .then(response => response.json())
+                .then(result => {
+                    console.log(result);
+
+                    nextURL = result.next;
+                    prevURL = result.previous;
+
+                    // if (nextURL) {
+                    //     buttonNext.disabled = false;
+                    // } else {
+                    //     buttonNext.disabled = true;
+                    // }
+
+                    // if (prevURL) {
+                    //     buttonPrevious.disabled = false;
+                    // } else {
+                    //     buttonPrevious.disabled = true;
+                    // }
+
+                    infoBox.innerHTML = `NextURL: ${nextURL}<br>PrevURL: ${prevURL}`;
+
+                    listPokemon.innerHTML = "";
+                    result.results.forEach(pokemon => {
+                        listPokemon.innerHTML += `<li>${pokemon.name}</li>`;
+                    });
+                });
+        }
+
+    </script>
+</body>
+</html>
