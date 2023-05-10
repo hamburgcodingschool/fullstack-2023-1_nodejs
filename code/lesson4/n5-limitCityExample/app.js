@@ -15,13 +15,27 @@ app.get("/get10Cities", function(req, res) {
 });
 
 app.get("/getCities", function(req, res) {
+    
     let limit = req.query.limit;
     if (limit <= 0 || !limit) {
         limit = 20;
     }
-    db.getCitiesWithLimit (limit, function(result) {
-        res.json(result);
-    } );
+    
+    let offset = req.query.offset;
+    if (offset <= 0 || !offset) {
+        offset = 20;
+    }
+
+    db.getCityCount(function(cityCount) {
+        db.getCitiesWithLimit (limit, offset, function(result) {
+            res.json({
+                count: cityCount,
+                next: "http://localhost:3000/getCities?offset=20&limit=20",
+                previous: null,
+                results: result
+            });
+        });
+    });
 });
 
 

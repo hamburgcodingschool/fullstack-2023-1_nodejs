@@ -12,16 +12,25 @@ function get10Cities(callback) {
     connection.query("SELECT * FROM city LIMIT 10", function(err, result) {
         // console.log(result);
         callback(result);   
+        
     });
 }
 
-function getCitiesWithLimit(limit, callback) {
-    connection.query(`SELECT * FROM city LIMIT ${limit}`, function(err, result) {
+function getCitiesWithLimit(limit, offset, callback) {
+    connection.query(`SELECT * FROM city LIMIT ${limit} OFFSET ${offset}`, function(err, result) {
         callback(result);   
+    });
+}
+
+function getCityCount(callback) {
+    connection.query(`SELECT COUNT(*) AS cityCount FROM city`, function(err, result) {
+        const cityCount = result[0].cityCount;
+        callback(cityCount);   
     });
 }
 
 module.exports = {
     get10Cities,
-    getCitiesWithLimit
+    getCitiesWithLimit,
+    getCityCount
 }
