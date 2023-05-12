@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a> | 
+        Add Country
+    </nav>
+
+    <form id="form1">
+        <input name="q" placeholder="My Own Google Interface">
+        <button id="buttonGo">Google it!</button>
+        <!-- <button type="reset">Reset</button> -->
+    </form>
+
+    <script>
+        // const buttonGo = document.querySelector("#buttonGo");
+        // buttonGo.addEventListener("click", function() {
+        //     //
+        // });
+
+
+        const form1 = document.querySelector("#form1");
+        form1.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            // fetch(...) ...
+        })
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        Home | 
+        <a href="addCountry.html">Add Country</a>
+    </nav>
+
+    <select id="countrySelect">
+        <option value="">-</option>
+    </select>
+    <ul id="cityList"></ul>
+    
+    <button id="buttonPrevious" disabled>PREVIOUS</button>
+    <button id="buttonNext" disabled>NEXT</button>
+
+    <script>
+        const cityList = document.querySelector("#cityList");
+        const buttonPrevious = document.querySelector("#buttonPrevious");
+        const buttonNext = document.querySelector("#buttonNext");
+        const countrySelect = document.querySelector("#countrySelect");
+
+        let nextURL = null;
+        let prevURL = null;
+
+        countrySelect.addEventListener("change", function() {
+            loadCities("http://localhost:3000/api/cities/" + countrySelect.value);
+        });
+
+        buttonNext.addEventListener("click", function() {
+            loadCities(nextURL);
+        });
+
+        buttonPrevious.addEventListener("click", function() {
+            loadCities(prevURL);
+        });
+
+        function loadCountries() {
+            const options = {
+                method: "GET",
+            };
+
+            fetch("http://localhost:3000/api/countries?limit=300", options)
+                .then(response => response.json())
+                .then(result => {
+                    result.results.forEach(element => {
+                        countrySelect.innerHTML += `<option value="${element.Code}">${element.Name}</option>`;
+                    });
+                }) 
+        }
+
+        function loadCities(url) {
+            const options = {
+                method: "GET",
+            };
+
+            fetch(url, options)
+                .then(response => response.json())
+                .then(result => {
+                    nextURL = result.next;
+                    prevURL = result.previous;
+
+                    if (nextURL) {
+                        buttonNext.disabled = false;
+                    } else {
+                        buttonNext.disabled = true;
+                    }
+
+                    if (prevURL) {
+                        buttonPrevious.disabled = false;
+                    } else {
+                        buttonPrevious.disabled = true;
+                    }
+
+                    cityList.innerHTML = "";
+                    result.results.forEach(element => {
+                        console.log(element);
+                        cityList.innerHTML += `<li>${element.ID} - ${element.Name} - ${element.CountryCode}</li>`;
+                    });
+                }) 
+        }
+
+        loadCountries();
+        loadCities("http://localhost:3000/api/cities");
+    </script>
+</body>
+</html>
