@@ -1,0 +1,141 @@
+[
+  {
+    "id": 1,
+    "city": "Marrakech",
+    "country": "Marocco",
+    "latitude": 31.628674,
+    "longitude": -7.992047,
+    "imageSrc": "/img/marocco-marrakech-boucharouite-closeup.jpg",
+
+    "detailImageSrc": [
+      "/img/marocco-marrakech-boucharouite-window.jpg",
+      "/img/marocco-marrakech-boucharouite-bathroom.jpg",
+      "/img/marocco-marrakech-boucharouite-mixture.jpg"
+    ],
+    "titel": "–– most beautiful traditional way of Upcycling",
+    "caption": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi modi porro cumque necessitatibus consectetur quaeratb landitiis est odio recusandae nam deserunt omnis quisquam dolorum adlabore nisi molestias, eum soluta.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi modi porro cumque necessitatibus consectetur quaeratb landitiis est odio recusandae nam deserunt omnis quisquam dolorum adlabore nisi molestias, eum soluta.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi modi porro cumque necessitatibus consectetur quaeratb landitiis est odio recusandae nam deserunt omnis quisquam dolorum adlabore nisi molestias, eum soluta.",
+    "month": "March",
+    "year": "2018",
+    "author": "Patty",
+    "authorImg": "/img/Peppermint_Patty.png",
+    "authorTitle": "Patty–– upcycling virtuose and researcher",
+    "authorLocation": "Spain",
+    "authorSince": 2017,
+    "authorInfo": "Sequi modi porro cumque necessitatibus consectetur quaeratb landitiis est odio recusandae nam deserunt omnis quisquam dolorum adlabore nisi molestias, eum soluta.Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+  },
+  {
+    "id": 2,
+    "city": "Paris",
+    "country": "France",
+    "latitude": 48.864716,
+    "longitude": 2.349014,
+    "imageSrc": "/img/france-paris-deco-off-bistro-detail.jpg",
+    "detailImageSrc": [
+      "/img/france-paris-deco-off-fornasetti.jpg",
+      "/img/france-paris-deco-off-atelier-fevrier-detail-1.jpg",
+      "/img/france-paris-deco-off-fornasetti-colorful-pattern.jpg",
+      "/img/france-paris-deco-off-pierre-frey-colorful-pattern.jpg"
+    ],
+    "titel": "–– colorful patters at Paris Deco Off",
+    "caption": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi modi porro cumque necessitatibus consectetur quaeratb landitiis est odio recusandae nam deserunt omnis quisquam dolorum adlabore nisi molestias, eum soluta.",
+    "month": "January",
+    "year": "2019",
+    "author": "Sandra",
+    "authorImg": "/img/sandra-schollmeyer-artist-and-researcher.jpg",
+    "authorTitle": "Sandra–– weaver of color, textile sculptor and researcher",
+    "authorLocation": "Germany",
+    "authorSince": 2012,
+    "authorInfo": "Sequi modi porro cumque necessitatibus consectetur quaeratb landitiis est odio recusandae nam deserunt omnis quisquam dolorum adlabore nisi molestias, eum soluta.Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+  },
+  {
+    "id": 3,
+    "city": "Chiang Mai",
+    "country": "Thailand",
+    "latitude": 18.796143,
+    "longitude": 98.979263,
+    "imageSrc": "/img/chiangmai-Thailand-traditional-textile-market.jpg",
+    "detailImageSrc": [
+      "/img/chiangmai-Thailand-traditional-textile-market-1.jpg",
+      "/img/chiangmai-Thailand-traditional-textile-market-2.jpg"
+    ],
+    "titel": "–– hill tribes textile magic",
+    "caption": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi modi porro cumque necessitatibus consectetur quaeratb landitiis est odio recusandae nam deserunt omnis quisquam dolorum adlabore nisi molestias, eum soluta.",
+    "month": "November",
+    "year": "2018",
+    "author": "Snoopy",
+    "authorImg": "/img/Snoopy_Peanuts.png",
+    "authorTitle": "Snoopy–– South East Asia specialist and writer",
+    "authorLocation": "Bangkok",
+    "authorSince": 2018,
+    "authorInfo": "Sequi modi porro cumque necessitatibus consectetur quaeratb landitiis est odio recusandae nam deserunt omnis quisquam dolorum adlabore nisi molestias, eum soluta.Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+  },
+  {
+    "id": 4,
+    "city": "Paris",
+    "country": "France",
+    "latitude": 48.864716,
+    "longitude": 2.349014,
+    "imageSrc": "/img/france-paris-deco-off-fornasetti.jpg",
+    "detailImageSrc": [
+      "/img/france-paris-deco-off-fornasetti.jpg",
+      "/img/france-paris-deco-off-impression.jpg",
+      "/img/france-paris-deco-off-fornasetti-1.jpg"
+    ],
+    "titel": "–– wonderland- like wall decor",
+    "caption": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi modi porro cumque necessitatibus consectetur quaeratb landitiis est odio recusandae nam deserunt omnis quisquam dolorum adlabore nisi molestias, eum soluta.",
+    "month": "September",
+    "year": "2022",
+    "author": "Charlie",
+    "authorImg": "/img/Charlie_Brown.png",
+    "authorTitle": "Charlie–– contemporary pattern createur and researcher",
+    "authorLocation": "France",
+    "authorSince": 2020,
+    "authorInfo": "Sequi modi porro cumque necessitatibus consectetur quaeratb landitiis est odio recusandae nam deserunt omnis quisquam dolorum adlabore nisi molestias, eum soluta.Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+  },
+  {
+    "id": 5,
+    "city": "Frankfurt",
+    "country": "Germany",
+    "latitude": 50.110924,
+    "longitude": 8.682127,
+    "imageSrc": "/img/frankfurt-germany-heimtextil-impression.jpg",
+    "detailImageSrc": [
+      "/img/frankfurt-germany-heimtextil-tassel-1.jpg",
+      "/img/frankfurt-germany-heimtextil-fringes.jpg",
+      "/img/frankfurt-germany-heimtextil-tassel-2.jpg"
+    ],
+    "titel": "–– tasselmania at Germany's leading textile fair",
+    "caption": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi modi porro cumque necessitatibus consectetur quaeratb landitiis est odio recusandae nam deserunt omnis quisquam dolorum adlabore nisi molestias, eum soluta.",
+    "month": "January",
+    "year": "2020",
+    "author": "Franklin",
+    "authorImg": "/img/Franklin.png",
+    "authorTitle": "Franklin–– textile engineer and poete",
+    "authorLocation": "Switzerland",
+    "authorSince": 2021,
+    "authorInfo": "Sequi modi porro cumque necessitatibus consectetur quaeratb landitiis est odio recusandae nam deserunt omnis quisquam dolorum adlabore nisi molestias, eum soluta.Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+  },
+  {
+    "id": 6,
+    "city": "Paris",
+    "country": "France",
+    "latitude": 48.864716,
+    "longitude": 2.349014,
+    "imageSrc": "/img/france-paris-deco-off-pierre-frey-detail.jpg",
+    "detailImageSrc": [
+      "/img/france-paris-deco-off-pierre-frey-detail.jpg",
+      "/img/france-paris-deco-off-atelier-fevrier-detail.jpg",
+      "/img/france-paris-deco-off-pierre-frey-detail-1.jpg"
+    ],
+    "titel": "–– weave and print mix and match at Paris Deco Off 2023",
+    "caption": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi modi porro cumque necessitatibus consectetur quaeratb landitiis est odio recusandae nam deserunt omnis quisquam dolorum adlabore nisi molestias, eum soluta.",
+    "month": "January",
+    "year": "2023",
+    "author": "Lucy",
+    "authorImg": "/img/Lucy_van_Pelt.png",
+    "authorTitle": "Lucy–– magician of mix and match and color lover",
+    "authorLocation": "Turkey",
+    "authorSince": 2021,
+    "authorInfo": "Sequi modi porro cumque necessitatibus consectetur quaeratb landitiis est odio recusandae nam deserunt omnis quisquam dolorum adlabore nisi molestias, eum soluta.Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+  }
+]
